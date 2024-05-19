@@ -1,5 +1,5 @@
-import 'package:candkes_app/pages/home_page.dart';
-import 'package:candkes_app/widgets/custom_btn.dart';
+import 'package:candles_app/pages/home_page.dart';
+import 'package:candles_app/widgets/custom_btn.dart';
 import 'package:flutter/material.dart';
 
 class SuccessfulRegister extends StatelessWidget {

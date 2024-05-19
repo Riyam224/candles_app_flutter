@@ -1,5 +1,4 @@
-import 'package:candkes_app/pages/splash_page.dart';
-import 'package:candkes_app/pages/success_register_page.dart';
+import 'package:candles_app/pages/success_register_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
