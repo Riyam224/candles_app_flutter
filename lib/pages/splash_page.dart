@@ -1,5 +1,5 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
-import 'package:candkes_app/pages/home_page.dart';
+import 'package:candkes_app/pages/register_page.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 
@@ -35,7 +35,7 @@ class SplashPage extends StatelessWidget {
             )
           ],
         ),
-        nextScreen: const HomePage(),
+        nextScreen: const RegisterPage(),
         splashTransition: SplashTransition.decoratedBoxTransition,
         pageTransitionType: PageTransitionType.leftToRight,
         backgroundColor: Colors.white,

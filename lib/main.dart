@@ -1,5 +1,5 @@
-import 'package:candkes_app/pages/home_page.dart';
 import 'package:candkes_app/pages/splash_page.dart';
+import 'package:candkes_app/pages/success_register_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,8 +12,6 @@ class CandlesApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: HomePage(),
-    );
+        debugShowCheckedModeBanner: false, home: SuccessfulRegister());
   }
 }
