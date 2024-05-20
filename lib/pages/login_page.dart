@@ -1,17 +1,17 @@
-import 'package:candles_app/pages/login_page.dart';
+import 'package:candles_app/pages/register_page.dart';
 import 'package:candles_app/pages/success_register_page.dart';
 import 'package:candles_app/widgets/custom_btn.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
-class RegisterPage extends StatefulWidget {
-  const RegisterPage({super.key});
+class LoginPage extends StatefulWidget {
+  const LoginPage({super.key});
 
   @override
-  State<RegisterPage> createState() => _RegisterPageState();
+  State<LoginPage> createState() => _LoginPageState();
 }
 
-class _RegisterPageState extends State<RegisterPage> {
+class _LoginPageState extends State<LoginPage> {
   // todo
   bool isChecked = false;
 
@@ -38,7 +38,7 @@ class _RegisterPageState extends State<RegisterPage> {
               ),
             ),
             const Text(
-              'Create Your Account',
+              'Login Your Account',
               style: TextStyle(
                 fontSize: 32,
               ),
@@ -49,7 +49,7 @@ class _RegisterPageState extends State<RegisterPage> {
               child: TextField(
                 textAlign: TextAlign.center,
                 decoration: InputDecoration(
-                  hintText: 'Dmitriy.divnov@gmail.com',
+                  hintText: 'Jane Due',
                   prefix: Padding(
                     padding: EdgeInsets.only(
                       left: 8,
@@ -72,7 +72,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 obscureText: true,
                 textAlign: TextAlign.center,
                 decoration: InputDecoration(
-                  hintText: 'Dmitriy.divnov@gmail.com',
+                  hintText: '********',
                   suffix: Icon(Icons.visibility_off),
                   prefix: Padding(
                     padding: EdgeInsets.only(
@@ -98,7 +98,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     },
                   ),
                   const SizedBox(width: 8),
-                  Text('Remember me')
+                  const Text('Remember me')
                 ],
               ),
             ),
@@ -129,23 +129,22 @@ class _RegisterPageState extends State<RegisterPage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Text('already have an account '),
+                const Text('Dont have an account '),
                 TextButton(
-                  onPressed: () {
-                    Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const LoginPage()),
-                    );
-                  },
-                  child: const Text(
-                    'sign in',
-                    style: TextStyle(
-                      color: Color(0xff65594f),
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                )
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const RegisterPage()),
+                      );
+                    },
+                    child: const Text(
+                      'sign up',
+                      style: TextStyle(
+                        color: Color(0xff65594f),
+                        fontWeight: FontWeight.bold,
+                      ),
+                    )),
               ],
             ),
           ],
