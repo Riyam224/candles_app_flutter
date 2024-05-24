@@ -1,4 +1,4 @@
-import 'package:candles_app/pages/home_page.dart';
+import 'package:candles_app/pages/home/home_page.dart';
 import 'package:candles_app/widgets/custom_btn.dart';
 import 'package:flutter/material.dart';
 
@@ -27,7 +27,7 @@ class SuccessfulRegister extends StatelessWidget {
         const Padding(
           padding: EdgeInsets.only(bottom: 40),
           child: Text(
-            'You have successfully registered in our app and start working in it.',
+            'You have successfully registeredin our app and start working in it.',
             style: TextStyle(color: Color.fromRGBO(185, 186, 213, 1)),
           ),
         ),

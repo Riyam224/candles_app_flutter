@@ -1,4 +1,4 @@
-import 'package:candles_app/pages/register_page.dart';
+import 'package:candles_app/pages/register/register_page.dart';
 import 'package:candles_app/pages/success_register_page.dart';
 import 'package:candles_app/widgets/custom_btn.dart';
 import 'package:flutter/material.dart';
