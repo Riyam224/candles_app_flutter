@@ -19,7 +19,7 @@ class CategorySmallImageList extends StatelessWidget {
       width: double.infinity,
       child: ListView.builder(
         shrinkWrap: true,
-        physics: const NeverScrollableScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         itemCount: images.length,
         scrollDirection: Axis.horizontal,
         itemBuilder: (BuildContext context, int index) {
