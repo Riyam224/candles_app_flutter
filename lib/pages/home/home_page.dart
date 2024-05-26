@@ -7,6 +7,8 @@ import 'package:candles_app/pages/home/home_app_bar.dart';
 import 'package:candles_app/pages/home/single_image_blue.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_nav_bar/google_nav_bar.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -15,6 +17,14 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        // todo navbar
+        bottomNavigationBar: GNav(tabs: [
+          GButton(icon: Icons.home),
+          GButton(icon: Icons.menu),
+          GButton(icon: Icons.add_shopping_cart),
+          GButton(icon: FontAwesomeIcons.heart),
+          GButton(icon: Icons.person),
+        ]),
         body: CustomScrollView(
           slivers: [
             SliverToBoxAdapter(
