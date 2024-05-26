@@ -13,25 +13,44 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: Column(
-      children: [
-        HomeAppBar(),
-        CategorySmallImageList(),
-        SingleImageBlue(),
-        SizedBox(
-          height: 32,
+    return SafeArea(
+      child: Scaffold(
+        body: CustomScrollView(
+          slivers: [
+            SliverToBoxAdapter(
+              child: HomeAppBar(),
+            ),
+            SliverToBoxAdapter(
+              child: CategorySmallImageList(),
+            ),
+            SliverToBoxAdapter(
+              child: SingleImageBlue(),
+            ),
+            SliverToBoxAdapter(
+              child: SizedBox(
+                height: 32,
+              ),
+            ),
+            SliverToBoxAdapter(
+              child: CategoryText(),
+            ),
+            SliverToBoxAdapter(
+              child: SizedBox(
+                height: 16,
+              ),
+            ),
+            SliverToBoxAdapter(
+              child: CategoryTextList(),
+            ),
+            SliverToBoxAdapter(
+              child: SizedBox(
+                height: 32,
+              ),
+            ),
+            SliverToBoxAdapter(child: CardList()),
+          ],
         ),
-        CategoryText(),
-        SizedBox(
-          height: 16,
-        ),
-        CategoryTextList(),
-        SizedBox(
-          height: 32,
-        ),
-        CardList(),
-      ],
-    ));
+      ),
+    );
   }
 }

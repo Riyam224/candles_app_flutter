@@ -60,7 +60,7 @@ class _CardListState extends State<CardList> {
     return Expanded(
       child: GridView.builder(
         // todo
-        physics: const BouncingScrollPhysics(),
+        physics: const NeverScrollableScrollPhysics(),
         shrinkWrap: true,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
