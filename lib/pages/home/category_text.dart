@@ -12,7 +12,10 @@ class CategoryText extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Padding(
-              padding: EdgeInsets.only(left: 16.0, bottom: 20),
+              padding: EdgeInsets.only(
+                left: 16.0,
+                bottom: 20,
+              ),
               child: Text(
                 'Categories',
                 style: TextStyle(

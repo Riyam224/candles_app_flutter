@@ -1,6 +1,4 @@
 import 'package:candles_app/pages/home/home_page.dart';
-import 'package:candles_app/pages/login/login_page.dart';
-
 import 'package:flutter/material.dart';
 
 void main() {

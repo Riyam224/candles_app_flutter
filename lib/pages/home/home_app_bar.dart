@@ -9,7 +9,7 @@ class HomeAppBar extends StatelessWidget {
     return Padding(
       padding:
           const EdgeInsets.only(left: 16.0, top: 16.0, right: 16.0, bottom: 20),
-      child: Container(
+      child: SizedBox(
           width: double.infinity,
           height: 40,
           child: Row(
