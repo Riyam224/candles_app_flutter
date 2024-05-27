@@ -20,6 +20,7 @@ class HomeAppBar extends StatelessWidget {
                 'Elowen',
                 style: TextStyle(
                   fontSize: 18,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
               const FaIcon(FontAwesomeIcons.search),
